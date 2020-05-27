@@ -16,5 +16,5 @@ from studentsapp.models import student
 
 # 第二種方式，加入 ModelAdmin 類別，定義顯示欄位
 class studentAdmin(admin.ModelAdmin):
-	list_display=('id','cName','cSex','cBirthday','cEmail','cPhone','cAddr')
+	list_display=('id','c','cSex','cBirthday','cEmail','cPhone','cAddr')
 admin.site.register(student,studentAdmin)
