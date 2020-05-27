@@ -2,7 +2,7 @@ from django.db import models
 
 class student(models.Model):
 	cName = models.CharField(max_length=20)
-	cSex = models.CharField(max_length=2, default='M', null=Fals)
+	cSex = models.CharField(max_length=2, default='M')
 	cBirthday = models.DateField(null=False)
 	cEmail = models.EmailField(max_length=100, blank=True, default='')
 	cPhone = models.CharField(max_length=50, blank=True, default='')
