@@ -1,12 +1,12 @@
 from django.db import models
 
 class student(models.Model):
-	c = models.CharField(max_length=20)
-	cSex = models.CharField(max_length=2, default='M')
-	cBirthday = models.DateField(null=False)
-	cEmail = models.EmailField(max_length=100, blank=True, default='')
-	cPhone = models.CharField(max_length=50, blank=True, default='')
-	cAddr = models.CharField(max_length=255,blank=True, default='')
+	no = models.CharField(max_length=50)
+	companyid = models.CharField(max_length=50)
+	num = models.CharField(max_length=50)
+	jobname = models.CharField(max_length=50)
+	company = models.CharField(max_length=50)
+	cash = models.CharField(max_length=50)
 	
 	def __str__(self):
-		return self.cName
+		return self.no
